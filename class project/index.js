@@ -205,8 +205,10 @@ inputSearch.onkeyup = (e) => {
 }
 
 const init = () => {
+    
     const getdatA = localStorage.getItem("comment");
-    datA = JSON.parse(getdatA);
+    
+    datA = JSON.parse(getdatA) || [];
     console.log(datA);
     
     render(datA);
