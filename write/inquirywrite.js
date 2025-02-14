@@ -74,7 +74,7 @@ inquiries[index].date = updatedDate; // 수정된 시간 저장
 localStorage.setItem('inquiry', JSON.stringify(inquiries));
 
 alert('수정되었습니다.');
-location.href = '../main/inquiry.html';
+location.href = '../inquirymain/inquiry.html';
 } else {
 alert('수정할 데이터를 찾을 수 없습니다.');
 }
@@ -105,7 +105,7 @@ inquiries.splice(index, 1); // 해당 인덱스 삭제
 localStorage.setItem('inquiry', JSON.stringify(inquiries));
 
 alert('삭제되었습니다.');
-location.href = '../main/inquiry.html';
+location.href = '../inquirymain/inquiry.html';
 };
 
 // 문의 게시판 이동
